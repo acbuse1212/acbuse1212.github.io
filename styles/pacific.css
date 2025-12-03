@@ -1,0 +1,160 @@
+* { box-sizing: border-box; }
+ html, body {
+	height: 100%;
+	margin: 0;
+ }
+ body { 
+       /* Changed from #aa6731 (Brown) to #735A40 (Dark Earth Brown/Tan) */
+       background-color: #735A40;
+       /* Changed from #faf8f5 (Off-White) to #F0EAD6 (Muted Tan/Parchment) */
+       color: #F0EAD6;
+	   font-family: Verdana, Arial, sans-serif;
+	   margin: 0;
+}
+#wrapper { 
+        /* Changed from #c47004 (Orange-Brown) to #B29B7F (Mid-Tan/Beige) */
+        background-color: #B29B7F;
+		
+}
+header { 
+         /* Changed from #d17f13 (Orange-Brown) to #384A3B (Dark Forest Green) */
+         background-color: #384A3B;
+         /* Changed from #160c01 (Very Dark Brown) to #EAE7DC (Light Cream) */
+		 color: #EAE7DC;
+		 font-family: Georgia, serif;
+		 padding: 1em;
+}
+header a { text-decoration: none; }
+/* Link colors updated to complementary light shades */
+header a:link       { color: #D1CFBF; }
+header a:visited { color: #BBB9AB; }
+header a:hover     { color: #9A988D; }
+h1 {  font-size: 1.5em;
+     text-align: center;
+}
+h2 { 
+     /* Changed from #f7f4f2 (Off-White) to #D2C49A (Muted Moss Green/Gold) */
+     color: #D2C49A;
+     font-family: Georgia, serif; 
+}
+h3 { font-family: Georgia, serif; }
+nav { 
+     /* Changed from #ac7c14 (Yellow-Brown) to #566D57 (Medium Sage Green) */
+     background-color: #566D57;
+     font-size: 1.2em;
+	 text-align: center;
+}
+nav a { text-decoration: none; }
+/* Link colors updated to complementary light shades */
+nav a:link       { color: #F0EAD6; }
+nav  a:visited { color: #E0DBCF; }
+nav a:hover     { color: #C9C6BE; }
+nav ul { display: flex;
+       flex-direction: column;
+	   list-style-type: none; 
+       margin: 0;
+	   padding: 0; 
+}
+nav li { 
+      /* Changed from #4f810e (Olive Green) to #2C382D (Darker Green for separator) */
+      border-bottom: 1px solid #2C382D;
+      padding: .5em 1em;
+	  width: 100%; 
+}
+main { display: block; 
+      padding: 0 1em;
+}
+dt { 
+     /* Changed from #127722 (Bright Green) to #6A8E4E (Natural Olive Green) */
+     color: #6A8E4E;
+     font-weight: bold;
+}
+.resort { 
+          /* Changed from #f7f6f2 (Off-White) to #F0EAD6 (Muted Tan/Parchment) */
+          color: #F0EAD6;
+          font-size: 1.2em;
+}
+#homehero { height: 300px;
+            background-image: url(../images/wilderness.jpeg);
+  			background-repeat: no-repeat;
+ }
+#yurthero { height: 300px;
+            background-image: url(../images/Yurtmain.jpeg);
+  			background-repeat: no-repeat;
+            background-size: 200% 100%; 
+ }
+#trailhero { height: 300px;
+            background-image: url(../images/Activities.jpeg);
+  			background-repeat: no-repeat;
+            background-size: 200% 100%; 
+}
+#reshero { height: 300px;
+            background-image: url(../images/reservations.jpeg);
+  			background-repeat: no-repeat;
+            background-size: 200% 100%; }
+#mobile  { display: inline; }	
+#desktop { display: none; }
+section {  padding-left: .5em;
+		padding-right: .5em;
+}			
+footer { 
+       /* Changed from #927147 (Brown) to #58504B (Slate Gray/Brown) */
+       background-color: #58504B;
+       font-size: .70em;
+       font-style: italic;
+	   padding: 1em;
+	   text-align: center;
+}
+table { margin: auto;
+      width: 90%;
+      /* Changed from #857d11 (Olive) to #6A8E4E (Natural Olive Green) */
+	  border: 1px solid #6A8E4E; 
+	  border-collapse: collapse; 
+}
+td, th { padding: 5px;
+       /* Changed from #b1ae17 (Gold/Yellow) to #8EAA7C (Lighter Muted Green) */
+       border: 1px solid #8EAA7C;
+}
+td { text-align: center; }
+.text { text-align: left; }
+tr:nth-of-type(even) { 
+                      /* Changed from #cea568 (Light Brown) to #917F6A (Muted Tan/Earth Tone) */
+                      background-color: #917F6A; 
+}
+form { display: flex;
+      flex-direction: column;
+	  padding-left: 1em;
+	  width: 80%; }
+input, textarea { margin-bottom: .5em; }
+video { float: right; margin: 2em; }
+@media (min-width: 600px) { 
+		h1 { font-size: 2em;
+            letter-spacing: .25em;		}
+		nav ul { flex-flow: row nowrap; 
+		       justify-content: space-around;
+			   padding-right: 2em; }
+		nav li { border-bottom: none;
+		      width: 12em; }
+		section { padding-left: 2em;
+		        padding-right: 2em; }
+		#flow { display: flex; 
+		        flex-direction: row; }
+		#mobile { display: none; }
+		#desktop { display: inline; }
+		#homehero, #yurthero, #trailhero, #reshero { background-size: 100% 100%; }
+		form { width: 60%;
+		      display: grid;
+			  grid-gap: 1em; gap: 1em;
+			  grid-template-columns: 10em 1fr; }
+		input[type="submit"] { grid-column: 2 / 3; width: 9em; }
+}
+@media (min-width: 1024px) { 
+		body { 
+          /* Changed gradient colors to blend wilderness tones */
+		  background-image: linear-gradient(to bottom, #A9A098 20%, #B29B7F 60%, #6A8E4E 100%);
+		  }
+		nav ul { padding-left: 10%;
+		       padding-right: 10%; }
+		#wrapper { margin: auto;
+		          width: 80%; }	
+}
